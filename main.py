@@ -18,7 +18,7 @@ class Phone(Field):
         super().__init__(value)
 
     def validate(self, value):
-        # Перевірка чи номер телефону містить тільки 10 цифр
+        # Перевірка чи номер телефону містить тільки 10 цифр телефону
         return bool(re.fullmatch(r'\d{10}', value))
 
 
